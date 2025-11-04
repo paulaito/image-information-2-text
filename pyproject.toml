@@ -1,5 +1,5 @@
 [project]
-name = "image-information-retrieval"
+name = "visual-info-extractor"
 version = "0.1.0"
 description = '"Service that extracts information from images, namely charts and diagrams, using VLMs."'
 authors = [{ name = "Paula Ito" }]
@@ -14,10 +14,10 @@ dependencies = [
 ]
 
 [tool.hatch.build.targets.sdist]
-include = ["image_information_retrieval"]
+include = ["visual_info_extractor"]
 
 [tool.hatch.build.targets.wheel]
-include = ["image_information_retrieval"]
+include = ["visual_info_extractor"]
 
 [build-system]
 requires = ["hatchling"]

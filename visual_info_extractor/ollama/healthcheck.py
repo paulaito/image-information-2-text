@@ -1,5 +1,5 @@
 import requests
-from image_information_retrieval.ollama.base import OllamaBaseClass
+from visual_info_extractor.ollama.base import OllamaBaseClass
 
 class OllamaHealthChecker(OllamaBaseClass):
     """Handles checking the reachability and status of the Ollama service."""

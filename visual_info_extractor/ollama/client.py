@@ -4,7 +4,7 @@ import psutil
 import os
 from typing import List, Dict, Any
 
-from image_information_retrieval.ollama.base import OllamaBaseClass
+from visual_info_extractor.ollama.base import OllamaBaseClass
 
 class OllamaClientManager(OllamaBaseClass):
     """Manages interactions with the Ollama API client."""
@@ -16,7 +16,7 @@ class OllamaClientManager(OllamaBaseClass):
 
         self.client = ollama.Client(host=host)
 
-    def run_chat_image(self, model: str, prompt: str, image_paths: List[str]) -> tuple[Dict[str, Any], str]:
+    def run_chat_image(self, model: str, prompt: str, image_paths: List[str]) -> tuple[Dict[str, Any], str, Dict[str, Any]]:
         """
         Runs a chat completion request, supporting multimodal inputs (e.g., images).
 
@@ -64,7 +64,7 @@ class OllamaClientManager(OllamaBaseClass):
             print(f"Memory used: {mem_used / (1024 ** 2):.2f} MB")
             print(f"CPU usage change: {cpu_used:.2f}%")
 
-            return response, response['message']['content'], trace
+            return response, trace
         
         except Exception as e:
             print(f"Error during chat request with model {model}: {e}")

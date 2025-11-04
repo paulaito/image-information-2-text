@@ -1,6 +1,6 @@
 from pathlib import Path
 from datasets import load_dataset
-from image_information_retrieval.logger import logging
+from visual_info_extractor.logger import logging
 
 BASE_EVAL_PATH = Path("../data/evaluation")
 
