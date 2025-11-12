@@ -2,7 +2,8 @@ from pathlib import Path
 from datasets import load_dataset
 from visual_info_extractor.logger import logging
 
-BASE_EVAL_PATH = Path("../data/evaluation")
+BASE_EVAL_PATH = Path("data")
+print(BASE_EVAL_PATH.absolute())
 
 def download_hf_sample_data(path, dataset_name, split="train", num_samples=20):
     logging.info(f"Downloading {dataset_name} from {path} for split {split} and {num_samples} samples...")

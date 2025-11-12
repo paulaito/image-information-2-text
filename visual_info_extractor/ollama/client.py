@@ -6,7 +6,7 @@ from typing import List, Dict, Any
 
 from visual_info_extractor.ollama.base import OllamaBaseClass
 
-class OllamaClientManager(OllamaBaseClass):
+class OllamaClient(OllamaBaseClass):
     """Manages interactions with the Ollama API client."""
 
     def __init__(self, host: str = "http://localhost:11434"):
