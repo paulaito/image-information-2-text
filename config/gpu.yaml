@@ -1,0 +1,16 @@
+version: 1.0-gpu
+ollama_host: "http://localhost:11434"
+models:
+  - name: "qwen2.5vl:3b"
+  - name: "qwen3-vl:2b"
+  - name: "granite3.2-vision:2b"
+    prompt: "Speficic prompt for granite!"
+  - name: "llava:7b"
+  - name: "llava-llama3:8b"
+  - name: "moondream:1.8b"
+hf_datasets: 
+  - name: "diagram_image_to_text"
+    path: "HuggingFaceM4/the_cauldron"
+  - name: "chart2text"
+    path: "HuggingFaceM4/the_cauldron"
+default_prompt: "Describe the image in detail."
