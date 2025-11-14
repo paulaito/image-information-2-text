@@ -2,14 +2,17 @@
 
 This project leverages VLMs to extract image information, namely from diagrams and charts.
 
-How to run:
+How to install dependencies:
 ```make install```
 
-How to start ollama and pull models:
+How to start ollama:
 ```make start-ollama```
 
-```make pull-ollama-models```
+How to run with CPU device:
+```uv run python entrypoint.py --config_path config/cpu.yaml```
 
+How to run with GPU device:
+```uv run python entrypoint.py --config_path config/cpu.yaml```
 
 :warning: This is a WIP.
 
