@@ -14,7 +14,11 @@ class DataIO:
     BASE_EVAL_PATH = Path("data")
 
     @staticmethod
-    def read(path: str, write_to_path: str, dataset_name: str, split: str = "train", num_samples: int = 20):
+    def download(path: str, 
+                 write_to_path: str, 
+                 dataset_name: str, 
+                 split: str = "train", 
+                 num_samples: int = 20) -> None:
         """
         Downloads a sample of a multi-modal Hugging Face dataset,
         saving images as PNG and corresponding texts as TXT files locally.
@@ -54,10 +58,9 @@ class DataIO:
 
         except Exception as e:
             logging.error(f"Error during dataset download: {e}")
-    
 
     @staticmethod
-    def write(df: pd.DataFrame, file_name: str, output_dir: str, append: bool):
+    def write(df: pd.DataFrame, file_name: str, output_dir: str, append: bool) -> None:
         """
         Writes a list of dictionaries to a local Parquet file.
 
