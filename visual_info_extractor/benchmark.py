@@ -41,6 +41,7 @@ class Benchmark:
         version = self.config.version
         dataset_dir = f"{dataset.save_to}/{dataset.name}"
         results_dir = f"{dataset.save_to}/results/{self.config.version}"
+        sample = dataset.sample
 
         if not prompt or not name or not save_to or not version:
             raise LookupError("Missing model parameter")
@@ -51,7 +52,8 @@ class Benchmark:
             model name: {name}
             model prompt: {prompt}
             dataset directory: {dataset_dir}
-            results directory: {results_dir}""")
+            results directory: {results_dir}
+            sample: {sample}""")
         
         return VLMInferencer(
             model_name=name,
@@ -59,16 +61,16 @@ class Benchmark:
             results_dir=results_dir,
             ollama_client=self.client,
             io=self.io,
-            prompt=prompt
+            prompt=prompt,
+            sample=sample
         )
 
     def run(self) -> None:
         if self.download:
             self.download_data()
         
-        for model in self.config.models:
-            for dataset in self.hf_datasets:
+        for dataset in self.hf_datasets:
+            for model in self.config.models:
                 inferencer = self.set_inferencer(model,
                                                  dataset=dataset)
-                inferencer.set_prompt(model.prompt)
-                inferencer.inference()
+                inferencer.run()

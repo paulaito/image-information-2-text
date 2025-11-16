@@ -6,12 +6,11 @@ import glob
 import pandas as pd
 
 class VLMInferencer:
-    def __init__(self, model_name: str, prompt: str, datasets_dir: str, results_dir: str, ollama_client: OllamaClient, io: DataIO):
+    def __init__(self, model_name: str, prompt: str, datasets_dir: str, results_dir: str, sample: int, ollama_client: OllamaClient, io: DataIO):
         self.model_name = model_name
         self.results_dir = results_dir
-        self.images_path = sorted(glob.glob(f"{datasets_dir}/**/*.png", recursive=True))
-        self.txt_paths = sorted(glob.glob(f"{datasets_dir}/**/*.txt", recursive=True))
-
+        self.images_path = sorted(glob.glob(f"{datasets_dir}/**/*.png", recursive=True))[:sample]
+        self.txt_paths = sorted(glob.glob(f"{datasets_dir}/**/*.txt", recursive=True))[:sample]
         self.ollama_client = ollama_client
         self.io = io
         self.results = []
@@ -19,6 +18,10 @@ class VLMInferencer:
     
     def set_prompt(self, prompt: str) -> None:
         self.prompt = prompt
+
+    def run(self):
+        self.inference()
+        self.write_results()
 
     def inference(self):
         num_runs = len(self.images_path)
