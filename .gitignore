@@ -2,8 +2,8 @@
 .venv
 plan.md
 __pycache__/
-
-data/evaluation
+data/chart2text
+data/diagram_image_to_text
 
 # old experiments
 image_to_text_model.ipynb
