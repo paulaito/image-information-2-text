@@ -53,7 +53,7 @@ class VLMInferencer:
 
         df = pd.DataFrame(rows)
 
-        logging.INFO(f"Writing results to {self.results_dir}")
+        logging.info(f"Writing results to {self.results_dir}")
 
         self.io.write(
             df = df,
