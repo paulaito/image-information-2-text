@@ -1,0 +1,11 @@
+version: 1.0-cpu
+ollama_host: "http://localhost:11434"
+models: 
+  - name: "qwen2.5vl:3b"
+  - name: "granite3.2-vision:2b"
+hf_datasets: 
+  - name: "diagram_image_to_text"
+    path: "HuggingFaceM4/the_cauldron"
+  - name: "chart2text"
+    path: "HuggingFaceM4/the_cauldron"
+default_prompt: "Describe the image in detail."

@@ -16,18 +16,14 @@ class OllamaHealthChecker(OllamaBaseClass):
         try:
             response = requests.get(f"{self.host}/api/tags", timeout=3)
             if response.status_code == 200:
-                print(f"✅ Ollama is reachable at {self.host}")
+                print(f"Ollama is reachable at {self.host}")
                 return True
             else:
-                print(f"⚠️ Ollama responded with status {response.status_code}")
-                return False
+                raise ConnectionError(f"Ollama responded with status {response.status_code}")
         except requests.exceptions.ConnectionError:
-            print(f"❌ Could not connect to Ollama at {self.host}")
-            return False
+            raise ConnectionError(f"Could not connect to Ollama at {self.host}. Did you start ollama server?")
         except requests.exceptions.Timeout:
-            print(f"⏱️ Connection to Ollama at {self.host} timed out")
-            return False
+            raise TimeoutError(f"Connection to Ollama at {self.host} timed out.")
         # You might also want a generic except for other request issues
         except requests.exceptions.RequestException as e:
-            print(f"🚨 An unexpected request error occurred: {e}")
-            return False
+            raise Exception(f"An unexpected request error occurred: {e}")
