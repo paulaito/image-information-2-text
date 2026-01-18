@@ -22,7 +22,7 @@ class OllamaClient(OllamaBaseClass):
         """Returns a list of installed models by calling `ollama list` inside the container."""
         try:
             result = subprocess.run(
-                ["docker", "exec", "ollama", "ollama", "list"],
+                ["ollama", "list"],
                 capture_output=True,
                 text=True,
                 check=True
@@ -44,7 +44,7 @@ class OllamaClient(OllamaBaseClass):
         """Pulls models in case the model is not already pulled."""
         for name in model_names:
             if name and not self.is_model_pulled(name):
-                cmd = ["docker", "exec", "-it", "ollama", "ollama", "pull", name]
+                cmd = ["ollama", "pull", name]
                 print(f"Pulling model: {name}")
                 subprocess.run(cmd, check=True)
             else:
