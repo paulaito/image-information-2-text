@@ -1,4 +1,4 @@
-version: 1.1-gpu
+version: 1.2-gpu
 ollama_host: "http://localhost:11434"
 models:
   - name: "qwen2.5vl:3b"
@@ -12,17 +12,4 @@ hf_datasets:
     path: "HuggingFaceM4/the_cauldron"
   - name: "chart2text"
     path: "HuggingFaceM4/the_cauldron"
-default_prompt: |
-  SYSTEM INSTRUCTION:
-  You are an expert engineering document analyst working for a Research and Technology Organization (RTO). Your task is to process a visual element (chart, diagram, or flowchart) extracted from a technical report. Your goal is to generate a comprehensive, structured text description that fully captures the image's content, data, and semantic relationships. This description must serve as highly effective context for a downstream Retrieval-Augmented Generation (RAG) system.
-
-  USER PROMPT:
-  Analyze the provided image. First, identify the type of visual, its title/caption (if any) and its main purpose. Then, systematically extract its trends and/or flow relationships. Finally, generate a high-density, semantically rich summary.
-
-  Follow this exact multi-part output format precisely:
-
-  1. \textbf{Type}: [Identify as: Line Chart, Bar Chart, Flowchart, Process Diagram, Schematic, etc.]
-  2. \textbf{Title/Caption}: [Extract the figure title/caption text, if present.]
-  3. \textbf{Purpose}: [Extract the purpose of the image. What is it trying to convey?]
-  4. \textbf{Trends and Relationships}: [Describe the main trends, correlations, or causal relationships observed. State the primary finding.]
-  5. \textbf{Main Insights}: [Generate a comprehensive, fluent paragraph (min 3 sentences) that combines the title, data, and insights. Focus on relevant conclusions.]
+default_prompt: "Describe the image in detail."
