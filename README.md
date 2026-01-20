@@ -2,8 +2,6 @@
 
 This project leverages VLMs to extract image information, namely from diagrams and charts. It also applies LLM-as-a-Judge to validate the VLMs benchmarking, allowing to extract metrics like accuracy from long-form responses.
 
-This project benchmarks open-source VLMs to extract image information, namely from diagrams and charts. It also applies LLM-as-a-Judge to validate the VLMs benchmarking, allowing to extract metrics like accuracy from long-form responses.
-
 ## How to Run
 
 How to install dependencies:
