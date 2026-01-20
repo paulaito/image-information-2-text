@@ -1,0 +1,5 @@
+version: "1.4"
+ollama_host: "http://localhost:11434"
+input_dir: "data/results"
+output_dir: "data/evaluations"
+evaluator_model: "qwen3-vl:30b"

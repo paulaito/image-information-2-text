@@ -1,4 +1,4 @@
-version: 1.2-gpu
+version: 1.4-gpu
 ollama_host: "http://localhost:11434"
 models:
   - name: "qwen2.5vl:3b"
