@@ -4,6 +4,8 @@ from visual_info_extractor.logger import logging
 
 import glob
 import pandas as pd
+import re
+import ast
 
 class VLMInferencer:
     def __init__(self, model_name: str, prompt: str, datasets_dir: str, results_dir: str, sample: int, ollama_client: OllamaClient, io: DataIO):
@@ -29,17 +31,23 @@ class VLMInferencer:
         for image_path, txt_path in zip(self.images_path, self.txt_paths):
             run += 1
             with open(txt_path, "r", encoding="utf-8") as f:
-                groundtruth = f.read()
+                text = f.read()
+            match = re.search(r"\{.*?\}", text, re.DOTALL)
 
-            response, trace = self.ollama_client.run_chat_image(
+            if match:
+                groundtruth = ast.literal_eval(match.group())
+                prompt = groundtruth["user"] if "user" in groundtruth else self.prompt
+                assistant = groundtruth["assistant"]
+            
+            response, trace = self.ollama_client.run_chat(
                 model=self.model_name, 
-                prompt=self.prompt, image_paths=[image_path])
+                prompt=prompt, image_paths=[image_path])
             
             self.results.append({
                 image_path: {"response": response,
                              "trace": trace,
-                             "groundtruth": groundtruth,
-                             "prompt": self.prompt}
+                             "groundtruth": assistant,
+                             "prompt": prompt}
             })
 
             logging.info(f"Finished inference: {run}/{num_runs}")

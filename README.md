@@ -1,8 +1,8 @@
 # VLMs Benchmark
 
-This project benchmarks open-source VLMs to extract image information, namely from diagrams and charts.
+This project leverages VLMs to extract image information, namely from diagrams and charts. It also applies LLM-as-a-Judge to validate the VLMs benchmarking, allowing to extract metrics like accuracy from long-form responses.
 
-:warning: **This is a WIP.**
+This project benchmarks open-source VLMs to extract image information, namely from diagrams and charts. It also applies LLM-as-a-Judge to validate the VLMs benchmarking, allowing to extract metrics like accuracy from long-form responses.
 
 ## How to Run
 
@@ -12,10 +12,7 @@ How to install dependencies:
 How to start ollama:
 ```make start-ollama```
 
-How to run with CPU device:
-```uv run python entrypoint.py --config_path config/cpu.yaml```
-
-How to run with GPU device:
+How to run benchmarking:
 ```uv run python entrypoint.py --config_path config/gpu.yaml```
 
 If this is your first time running the project, make sure you call it with ```--download``` parameter to download the data. Example for CPU:
@@ -23,6 +20,9 @@ If this is your first time running the project, make sure you call it with ```--
 
 Another option to download the data without applying the inferencer is by using the following Make command:
 ```make download-data```
+
+How to run evaluator:
+```uv run python entrypoint.py --config_path config/evaluator.yaml --is_eval true```
 
 ## Datasets 
 Hugging Face subsets from [the_cauldron](https://huggingface.co/datasets/HuggingFaceM4/the_cauldron) dataset:

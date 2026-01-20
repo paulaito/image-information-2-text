@@ -60,6 +60,38 @@ class DataIO:
             logging.error(f"Error during dataset download: {e}")
 
     @staticmethod
+    def read_directory(
+        path: str, 
+        pattern: str = "*.csv",
+        is_result_dir: bool = True
+        ) -> pd.DataFrame:
+        """
+        Reads all CSV files in a directory and returns a combined DataFrame.
+
+        Args:
+            path (str): The path to the directory containing CSV files.
+            pattern (str): The glob pattern to match files. Defaults to '*.csv'.
+            is_result_dir (bool): Whether the directory contains result files that need special handling. Defaults to True.
+        """
+
+        logging.info(f"Reading data from {path} with pattern {pattern}...")
+
+        try:
+            dfs = []
+            for f in Path(path).glob(pattern):
+                tmp = pd.read_csv(f)
+                if is_result_dir:
+                    tmp["model"] = f.name.split("_")[1].split(".csv")[0]
+                dfs.append(tmp)
+
+            df = pd.concat(dfs, ignore_index=True)
+
+            return df[df.iloc[:, 0] != df.columns[0]]
+
+        except Exception as e:
+            logging.error(f"Error during dataset download: {e}")
+
+    @staticmethod
     def write(df: pd.DataFrame, file_name: str, output_dir: str, append: bool) -> None:
         """
         Writes a list of dictionaries to a local Parquet file.
