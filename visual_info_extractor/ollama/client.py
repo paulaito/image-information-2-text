@@ -50,7 +50,7 @@ class OllamaClient(OllamaBaseClass):
             else:
                 print(f"Model '{name}' is already installed. Skipping.")
 
-    def run_chat_image(self, model: str, prompt: str, image_paths: List[str]) -> tuple[Dict[str, Any], str, Dict[str, Any]]:
+    def run_chat(self, model: str, prompt: str, image_paths: List[str] = None) -> tuple[Dict[str, Any], str, Dict[str, Any]]:
         """
         Runs a chat completion request, supporting multimodal inputs (e.g., images).
 
@@ -69,15 +69,19 @@ class OllamaClient(OllamaBaseClass):
         start_cpu = process.cpu_percent(interval=None)
         start_mem = process.memory_info().rss  # in bytes
 
+        message = {
+            'role': 'user', 
+            'content': prompt, 
+        }
+        
+        if image_paths:
+            message['images'] = image_paths
+        
+
         try:
             response = self.client.chat(
                 model=model, 
-                messages=[
-                    {'role': 'user', 
-                     'content': prompt, 
-                     'images': image_paths
-                     }
-                ])
+                messages=[message])
             
             # Getting trace information
             end_time = time.time()
@@ -98,7 +102,7 @@ class OllamaClient(OllamaBaseClass):
             print(f"Memory used: {mem_used / (1024 ** 2):.2f} MB")
             print(f"CPU usage change: {cpu_used:.2f}%")
 
-            return response, trace
+            return response.message.content, trace
         
         except Exception as e:
             print(f"Error during chat request with model {model}: {e}")
