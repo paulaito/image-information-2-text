@@ -1,0 +1,294 @@
+image_path,response,trace,groundtruth,prompt
+data/diagram_image_to_text/diagram_image_to_text0.png,"The image presents a flowchart, set against a white background with black text. The flowchart depicts several stages in the process of reviewing medical articles for publication.
+
+At the beginning of the flowchart, there are three boxes labeled ""Database"", ""Conference"", and ""Clinical trials.gov"". These boxes represent the sources from which articles can be identified for review.
+
+Next, we see a box that reads ""Records identified n = 16"". This indicates that 16 records have been identified at this stage in the process.
+
+The flowchart then shows that these records will be reviewed by two reviewers. This is represented by a box with the label ""Records received by two reviewers"".
+
+Following this, there are several boxes representing different stages of the review process. These include a box labeled ""Duplicate records"" and another box labeled ""Full-text articles retrieved"". Both of these indicate further actions that will be taken during the review process.
+
+At this point in the flowchart, we see a box with the label ""Records reviewed by two reviewers"". This indicates that the full-text articles have been reviewed by both reviewers at this stage in the process.
+
+The final step in the process is represented by a box labeled ""Update"". This suggests that the process is not yet complete and may require further updates or actions. 
+
+Finally, the flowchart shows an arrow leading to a box labeled ""Stop the process"", indicating the end point of the review process. This implies that once all records have been reviewed and processed, the review process will be completed.","{'duration': 9.284655094146729, 'cpu_used': 0.1, 'mem_used': 0}","Database searches n=408, Conference abstracts n=16, and clinicaltrials.gov n=68 are connected with Records identified n=492 which is then connected with both Records screened and Duplicates removed. Records screened is then connected with both Records independently screened by two reviewers and Clearly irrelevant records removed. Then, Records independently screened by two reviewers is connected with Full-text articles retrieved and Irrelevant records removed. Full-text articles retrieved is then connected with both Stop the process and Update.",Break down the diagram into its components and explain their interrelations.
+data/diagram_image_to_text/diagram_image_to_text1.png,"The image presents a flowchart that outlines the process of a game, specifically focused on the second dose strategy. The flowchart is composed of three main boxes and two additional text boxes.
+
+At the top, there's a question posed as if it were an instruction or a prompt for the next step in the game: ""Got the first dose?"" This suggests that the flowchart starts from this point, indicating that the viewer has already received their first dose in the game.
+
+The middle box is a more straightforward instruction, stating ""No. Don't know"". This could be interpreted as an admission of uncertainty or confusion regarding the second dose strategy.
+
+The bottom box provides two possible outcomes based on the player's response to the question. If the player chooses to ""Got second dose?"", it leads to another set of instructions for the next step in the game. However, if the player responds with ""Yes 1 dose"", it indicates that they have received only one dose and are now at the end of this part of the flowchart.
+
+The two additional text boxes contain a question and an instruction for the player's response to the ""No."" outcome. These further guide the player on how to proceed after admitting uncertainty or confusion about their strategy.
+
+Overall, the image provides a clear and structured approach to problem-solving within a game scenario, highlighting the importance of decision-making and strategy in gameplay.","{'duration': 3.156912326812744, 'cpu_used': 0.3, 'mem_used': 0}",If Got the first dose? is Yes then 1 dose and if Got the first dose? is No/Don't know then Got second dose?. If Got second dose? is Yes then 1 dose and if Got second dose? is No/Don't know then 2 doses.,Detail the hierarchical structure of the components in this diagram.
+data/diagram_image_to_text/diagram_image_to_text10.png,"The image presents a family tree, illustrating the relationships between different individuals. The main figures in this diagram are Hais Albert Einstein, Milla Maria, Wife of Albert Einstein, Son of Albert Einstein (Hermann), and Born In Germany Empire.
+
+At the top of the diagram, we see Hais Albert Einstein, depicted as the father figure. His relationship to Milla Maria is indicated by a line connected to him, signifying his marriage to her. The wife's name, Milla Maria, is also mentioned, implying that she is the mother of their son.
+
+The son of Albert Einstein, Hermann, is also included in this diagram. A line connects him to Hais Albert Einstein, symbolizing their parent-child relationship. This indicates that Hais Albert Einstein is Hermann's father, and he is therefore Hermann's son.
+
+Finally, it mentions that Hermann was born in Germany Empire. This provides information about Hermann's place of birth.
+
+All these relationships are depicted through the use of lines connecting different figures in this diagram. The lines represent direct family relationships between the individuals mentioned in the diagram.","{'duration': 2.7373533248901367, 'cpu_used': 0.4, 'mem_used': 0}","Hans Albert Einstein is Son of Albert Einstein. Mileva Maric is wife of Albert Einstein and Albert Einstein is son of Hermann Einstein. Also, Albert Einstein was born in German Empire.",Delineate the roles of the components within this diagram.
+data/diagram_image_to_text/diagram_image_to_text11.png,"The image presents a visual representation of how an Arduino microcontroller communicates with other devices. At the center of the image, there's a square-shaped Arduino logo in blue. Two black arrows extend from this central point towards two rectangular sensors, indicating a connection or relationship between these elements.
+
+On the left side of the image, one sensor is marked as a ""home automation"" sensor, suggesting its role in controlling devices within a home environment. On the right side, another sensor is labeled as a ""Sensor"", though its specific purpose isn't clear from the image alone. 
+
+The background of the image is white, which provides a stark contrast to the blue Arduino logo and allows the black arrows and rectangular sensors to stand out. The overall layout suggests a flow of communication or data transfer between the central Arduino logo and the peripheral sensors.
+
+This diagram appears to be an educational tool for understanding how the Arduino microcontroller interacts with other devices in home automation systems. It's important to note that this is just one interpretation, as there may be other ways to understand the relationships depicted in this image.","{'duration': 2.6867873668670654, 'cpu_used': 0.0, 'mem_used': 0}",Sensor is connected with Arduino which is then connected with Home automation.,Analyze the diagram and describe the dependency between its elements.
+data/diagram_image_to_text/diagram_image_to_text12.png,"The image presents a flowchart that illustrates the sequence of events leading to an ""Arrive at destination"". The chart is divided into two columns against a white background. On the left, there's a blue hexagon with text inside it that reads ""Intered OD"". This could possibly represent an initial decision or action.
+
+On the right column, several boxes are arranged vertically. Each box contains text and a diagram of a location, indicating specific destinations at different stages. The first box states ""Arrive on time"", followed by a map of what appears to be a train station, suggesting that the destination is a timely arrival at the station.
+
+The second box reads ""Next trip"", accompanied by a map of another location, possibly representing a subsequent journey. This could imply that after the first trip, there's another trip planned, and we are currently in between these trips.
+
+The third box says ""Arrive at destination"", with a map of what seems to be an airport, indicating that the final destination is an airport arrival. This suggests that we have arrived at our destination, which could either be a train station or an airport.
+
+In addition to the text and location diagrams, there are also several arrows connecting these boxes, symbolizing the flow of events from left to right. The arrows seem to indicate the progression of the sequence of events leading to the final destination. Overall, this diagram appears to be a visual representation of travel planning, illustrating different stages of travel with their respective destinations and arrival times.","{'duration': 3.6964595317840576, 'cpu_used': 0.8, 'mem_used': 2023424}",Inferred OD is connected with Get array of paths from O to D which is then connected with Find the best route which is further connected with Trip exists?. If Trip exists? is No then Arrival Time Inference Fails and if Trip exists? is Yes then Find arrival time at segment alighting location which is then connected with Arrival Time?. If Arrival Time? is No then Next trip which is then connected with Trip exists? and if Arrival Time? is Yes then Final segment which if Final segment is No then Check another one which is then connected with Find the best route and if Final segment is Yes then alighting time + egress time = arrival time.,Detail the cause-and-effect relationships within this diagram.
+data/diagram_image_to_text/diagram_image_to_text13.png,"In the image, there are four main components connected by a red arrow indicating direction and a green arrow pointing to the ""Start"" button. The first component is labeled with the word ""Decision"". This component has a green arrow leading to it from both the ""Start"" button and another component labeled as ""No"". 
+
+The second component is labeled with the word ""Yes"". It is connected to the ""Decision"" component by a red arrow, indicating that a decision was made. 
+
+A third component is labeled as ""Update"". It is connected to the ""No"" component by a green arrow, suggesting an update has been made or will be made if the ""No"" option is chosen.
+
+The fourth and final component is labeled with the word ""End"". It is connected to the ""Yes"" component by a red arrow, indicating that the process ends after making a decision. 
+
+The diagram seems to represent a flowchart for decision-making, guiding the user through a series of questions, one leading to another based on the previous answer: Start, Decision (No or Yes), Update, and End.","{'duration': 2.6220688819885254, 'cpu_used': 0.4, 'mem_used': 0}",Start is connected with Step 1 which is then connected with Decision. If Decision is No then Update which is then connected with Step 1 and if Decision is Yes then End.,Detail the hierarchical structure of the components in this diagram.
+data/diagram_image_to_text/diagram_image_to_text14.png,"The image presents a flowchart that illustrates the process of memory resolution of PC-BPPV malware, with three main sections: Malware Test, Positional Test, and End Study.
+
+In the Malware Test section, there are two boxes labeled 'Positional test'. The first box is connected to an arrow pointing towards the Malware Test section, indicating the progression from one step to the next. Below this box, there's another box labeled 'Trx', also connected to an arrow leading to the End Study section.
+
+The Positional Test section has two boxes labeled 'Positional test'. The first box is connected to an arrow pointing towards a second box, which then leads to the Malware Test section. The second box in this section has an arrow pointing towards the Malware Test section.
+
+Finally, the End Study section has a box labeled 'End study', with an arrow pointing downwards, suggesting the end of the process. All these boxes are connected by arrows, indicating the flow of information and steps in the process.","{'duration': 2.662954092025757, 'cpu_used': 0.4, 'mem_used': 0}","Memory is connected with Tx: Epely maneuver which is then connected with Positional test. If Positional test is Resolution of the PC-BPPV then End of Study and If Positional test is Treatment failure then Random allocation. Random allocation is then connected with both Malware Test and Tx: Semont maneuver. Also, Malware Test and Tx: Semont maneuver both are connected with Positional test which is finally connected with End of study.",Summarize the interactions among the components shown in the diagram.
+data/diagram_image_to_text/diagram_image_to_text2.png,"The image presents a clear, concise diagram that illustrates the connection between two entities: an ""Office"" and a ""Home"". The Office is represented by a blue rectangle with the word ""Office"" written in white text inside it. The Home is depicted as another blue rectangle, but this one has the word ""Home"" written in black text within it.
+
+A thin line in the color blue connects these two rectangles, symbolizing a link or relationship between them. This line serves as a visual cue to indicate that there is some interaction or movement between the Office and the Home. The direction of the line points towards the Office from the Home, suggesting that information or resources might be flowing from the Home to the Office.
+
+The simplicity of the diagram, with its minimalistic color scheme and clear labels, allows for easy interpretation. The use of rectangles to represent these entities also provides a sense of stability and permanence, reinforcing the idea of a continuous connection between the two places.","{'duration': 2.390301465988159, 'cpu_used': 0.0, 'mem_used': 0}",Office is connected with home.,Map out and interpret the links among diagram components.
+data/diagram_image_to_text/diagram_image_to_text3.png,"The image presents a flowchart that outlines the process of creating a service unit for a company. The chart is divided into three sections, each representing a different aspect of the process.
+
+In the first section, we see the start of the process. A rectangular box labeled ""CYLINDER"" indicates the beginning point. From here, two arrows extend outwards, leading to the next two boxes.
+
+The second section of the flowchart shows the valves and lubricated air tank. These are represented by rectangular boxes, each containing a valve symbol within them. Two arrows connect these boxes, suggesting a relationship between them in the process.
+
+The third and final section of the chart represents the service unit. This is depicted as a rectangular box with a valve symbol inside it. One arrow points to this box from the ""CYLINDER"" box, indicating that the service unit follows the valves and lubricated air tank.
+
+Two additional labels appear within the flowchart: ""AIR"" and ""Condenser"". These are likely part of the process described in the chart but are not explicitly depicted as boxes.
+
+Overall, the chart provides a clear and concise overview of the steps involved in creating a service unit for a company. The use of rectangular boxes and valve symbols helps to visually distinguish between different parts of the process.","{'duration': 3.182119607925415, 'cpu_used': 0.3, 'mem_used': 0}","Circuit is connected with Process which is then connected with CONTROL CIRCUIT which is further connected with VALVES. If Condenser is Air then SERVICE UNIT F,R,L,P which if SERVICE UNIT F,R,L,P is Lubricated Air then VALVES which is then connected with CYLINDER.",Chart the connections and roles of the diagram’s components.
+data/diagram_image_to_text/diagram_image_to_text4.png,"The image presents a flowchart that illustrates a sequence of operations for an automated process. The flowchart is divided into four distinct boxes, each representing a different stage of the process.
+
+Starting from the top left box, we find the ""Start"" operation. This box marks the beginning of the process and serves as the initial point in the flowchart.
+
+Moving to the right, we encounter the first decision-making node represented by the second box labeled ""Add"". This box signifies a decision or conditional branch where the process has multiple options to proceed with.
+
+The third box on the right contains the ""Sub"" operation. This box represents an option for the process to take a sub-routine path within the flowchart, indicating that the process might have more complex logic involved.
+
+Finally, we reach the bottom right box which houses the ""Stop"" operation. This box marks the end of the process and indicates that the automated sequence has completed its task.
+
+In summary, the flowchart represents a sequence of operations in an automated process, with four distinct boxes indicating different stages of the process, including decision-making nodes and options for sub-routine paths. The final destination is marked by the ""Stop"" operation box at the bottom right corner of the flowchart.","{'duration': 2.9220850467681885, 'cpu_used': 0.3, 'mem_used': 0}","Start is connected with Add which is then connected with Sub. Sub is then connected with both Update and Print. Also, both Update and Print are connected with Stop.",Elucidate the sequence of operations depicted in the diagram.
+data/diagram_image_to_text/diagram_image_to_text5.png,"The image presents a flowchart that illustrates the process of how an audio signal from the source, through amplification and processing, can be directed to either a target or a demonstrator. The flowchart is divided into three sections: the source, the processing block, and the output.
+
+Starting from the source, the audio signal is first amplified. This amplified audio signal then passes through the processing block where it may undergo further manipulation before being directed to one of two possible outputs: either the target or the demonstrator.
+
+The target section indicates that the processed audio signal can be sent directly to a speaker, presumably for playback purposes. On the other hand, the demonstrator section suggests that the audio signal could also be sent to an audio demonstration system for display or testing purposes.
+
+In essence, this flowchart outlines the journey of an audio signal from its source, through amplification and processing, and finally reaching either a target or a demonstrator, depending on the specific requirements of the application.","{'duration': 2.526937961578369, 'cpu_used': 0.0, 'mem_used': 0}",Source is connected with Amplification which is then connected with Process which is further connected with Demodulator which is finally connected with Target.,Summarize the interactions among the components shown in the diagram.
+data/diagram_image_to_text/diagram_image_to_text6.png,"The image presents a flowchart depicting the process of setting up an account on a platform named ""Zip"". The flowchart is organized in a vertical column, with each block representing a different stage in the setup process. 
+
+Starting from the top, the first block reads ""Bootstrap"", indicating the initiation of the setup process. Following this, there are four blocks that represent the steps for setting up an account. These include the installation of a copy, unpacking of the Zip file, registration, and configuration.
+
+The final two blocks at the bottom of the flowchart indicate the completion of the setup process. The first block reads ""Zip"", suggesting that the zip file has been downloaded and extracted. The second block reads ""ISO"", indicating that the ISO file has been installed.
+
+Overall, the flowchart provides a clear and concise overview of the steps involved in setting up an account on the Zip platform. It's a comprehensive guide for anyone looking to understand the process from start to finish.","{'duration': 2.4320974349975586, 'cpu_used': 0.0, 'mem_used': 0}","bootstrap is connected with Installation which is then connected with Copy which is further connected with Unpack. Unpack is connected with Register which is then connected with Config. Config is further connected with Zip, Image and ISO.",Review the diagram and comment on the linkage and flow among entities.
+data/diagram_image_to_text/diagram_image_to_text7.png,"The image presents a step-by-step guide on how to use a smartphone. The process is divided into six distinct stages, each represented by a blue box with white text and an orange arrow pointing forward. 
+
+At the beginning, we see a green box that reads ""Start"". This is followed by a blue box stating ""Identify your Problem"", which suggests that the first step in using the smartphone is to identify what you need help with.
+
+The third stage takes us to a blue box with the words ""Hold them down it's not going to go on its own"". This could be interpreted as a metaphor for downloading or installing an app on your phone.
+
+Next, there's another blue box that says ""Work It"". This might indicate that you've successfully installed an app and are now ready to use it.
+
+The fifth stage is represented by a red box with the words ""Ask for assistance"". This could imply that if you're still facing difficulties, you can seek help from others.
+
+Finally, we see a blue box that reads ""Put your hands on it"", which suggests that at this point, you should start interacting with the app or feature that you've downloaded or installed.
+
+Each of these stages is connected by an orange arrow pointing forward, indicating the sequence in which these tasks should be performed. The diagram also includes labels for each stage, further emphasizing the step-by-step nature of the process. 
+
+Overall, the image provides a clear and concise guide on how to use a smartphone, from identifying your problem to asking for assistance and starting to interact with the device.","{'duration': 3.655423641204834, 'cpu_used': 0.3, 'mem_used': 0}",Start is connected with Identify Problem which is then connected with work on it. Work on it is connected with Note them down in a diagram or table which is then connected with Ask for assistant which is further connected with Need more help?. If Need more help? is No then Ask for assistant and if Need more help? is Yes then Find solutions to the root causes identified which is finally connected with End.,Elucidate the sequence of operations depicted in the diagram.
+data/diagram_image_to_text/diagram_image_to_text8.png,"The image presents a flow chart illustrating the process of fabric inspection and cutting. The chart is composed of six rectangular blocks, each representing a different step in the process, arranged vertically with their tops aligned.
+
+Starting from the top left, the first block symbolizes ""Dyed and Finished Fabric in Roll"". This suggests that the fabric has been colored or treated for a specific purpose.
+
+Following this, the second block represents ""Fabric Inspection"", indicating that an examination of the fabric is being conducted. The third block is labeled as ""Authorization"", which could imply that permission or approval is sought for further actions.
+
+The fourth block in the sequence is titled ""Different Tests of Fabric"", suggesting that various methods are employed to assess the fabric's properties and quality.
+
+Next, we have the ""Test Cutting"" block, which signifies that a sample cutting of the fabric is being carried out. The fifth block represents ""Confirmation"", implying that the results of the previous tests are being verified or validated.
+
+Finally, the bottom right block reads ""Input to Cutting Section"", indicating that the confirmed results from the earlier tests are now being used for the actual cutting process. This concludes the flow chart, showing how each step in fabric inspection and cutting contributes to the final output.","{'duration': 3.065518379211426, 'cpu_used': 0.0, 'mem_used': 0}",Dyed and Finished Fabric in Roll is connected with Fabric Inspection which is then connected with Authentication. Authentication is connected with Different Tests of Fabric which is then connected with Test Cutting which is further connected with Confirmation which is finally connected with Input to Cutting Section.,Detail the cause-and-effect relationships within this diagram.
+data/diagram_image_to_text/diagram_image_to_text9.png,"The image presents a flowchart depicting a sequence of actions in a washing machine. Here's a detailed explanation of each step:
+
+1. **Start**: The first step is to initiate the process by pressing the ""End"" button on the control panel.
+2. **Fill the bath with water**: This action involves filling the bathtub with water to cover the clothes inside.
+3. **Add warm water**: Next, warm water is added to the filled bathtub.
+4. **Get into bath**: The user is invited to step into the bathtub filled with water and soap.
+5. **Wash**: Once in the bathtub, the user begins washing the clothes using a wash detergent.
+6. **Come Out**: After the clothes are thoroughly washed, they are removed from the tub.
+7. **Empty the bath water**: The used water is drained out of the bathtub.
+8. **Get dressed**: Finally, the person is asked to get dressed before pressing the ""End"" button again to end the process.
+
+The flowchart serves as a guide for how to properly operate a washing machine, ensuring that all necessary steps are followed in the correct order. It also provides an opportunity for users to familiarize themselves with the layout and functionality of the control panel, making it easier to navigate through the various settings and options available on the machine.","{'duration': 2.9872615337371826, 'cpu_used': 0.3, 'mem_used': 0}",Start is connected with Fill the bath with water which is then connected with Add warm water which is further connected with Get into bath. Get into bath is connected with Wash which is then connected with Come Out which is further connected with Empty the bath water. Empty the bath water is connected with Get dressed which is finally connected with End.,"Interpret the system depicted in the diagram, detailing component functions."
+image_path,response,trace,groundtruth,prompt
+data/chart2text/chart2text0.png,"The main idea being communicated through this graph is to provide an overview of various companies' employee retention rates, which can help businesses identify areas for improvement. The blue line represents each company's retention rate over time, providing a visual representation of how each organization's performance differs from others in the industry. This comparison allows for easier analysis and understanding of the trends and patterns within the data.","{'duration': 4.910540819168091, 'cpu_used': 0.0, 'mem_used': 0}","According to a ranking of PR firms based on the number of employees, APCO Worldwide had the third largest employment figures in 2019, with a total of 786 employees. Edelman had the highest number of employees that year, counting 5,703 people on its payroll.",What is the main idea being communicated through this graph?
+data/chart2text/chart2text1.png,"Based on the data presented in the image, it can be concluded that the preferences of politicians and their constituents differ. The graph shows a significant difference between Republican, Democratic, and Independent voters when it comes to support for the House of Representatives and Senate.
+
+The preferences show that while Democrats have a higher approval rate (67) than Republicans (55), Independent voters (14) have the lowest approval rate. This suggests that party affiliations may play a role in shaping the opinions of these groups towards politicians and political institutions.
+
+Furthermore, it is interesting to observe how support for specific politicians has changed over time. The graph indicates that there was a slight decrease in support for both Democrats and Republicans during the 2014 elections. However, the support levels have remained relatively stable since then.
+
+Overall, this graph provides valuable insights into the preferences of different groups within society and highlights the importance of understanding these nuances when conducting surveys or analyzing political trends.","{'duration': 2.377115488052368, 'cpu_used': 0.4, 'mem_used': 0}","As has been the case for the last several years, Americans view Congress negatively: Just 22% now express a favorable opinion of the institution while 71% say their opinion is unfavorable. The current ratings rival the lowest on record (in July 2013, 21% had a favorable opinion, 70% an unfavorable one); and are down six points since July of this year, though they are on-par with ratings in February.
+Though negative ratings of Congress cross party lines, Democratic impressions have become more negative over the last several months; today 21% of Democrats view Congress favorably, down from 30% in July.
+And as Republicans are poised to take control of both houses of Congress in January, their views of the institution are little changed over the past few years; currently 27% say they have a favorable view.",What conclusions can be drawn from the information depicted in this graph?
+data/chart2text/chart2text10.png,"The image presents a bar graph that compares the market share of several motorcycle companies in the United States. The horizontal bars, each representing a different company, are arranged in descending order from left to right. 
+
+At the top, American Honda Motors, Inc. holds the highest market share with 6112, followed by Harley-Davidson, Inc. at second place with 4894. The third position is held by Kawasaki Motor Company and TriStar Sport/Group Co., both tied at 1688.
+
+Next in line are Yamaha Motor Corporation (4894), American Suzuki Motor Corporation (4416), General Motors (486) from the Indian Motorcycle division, and BMW Motorsport (424).
+
+Continuing down, we see KTM Sportscooters (365), Kawasaki Jet-Sports (436), YAM Motorcycle Co., Ltd. (314), Kenmore Motorcycle, Ltd. (365), and Victory Motorcycles (234). 
+
+At the bottom of the graph, there's an additional bar labeled ""Collapse statistic"", but its details are not visible in the image.
+
+The companies' market shares are represented by different colors across the bars. The overall color scheme is primarily blue and white, which stands out against the dark gray background of the graph. 
+
+This image provides a clear comparison of the market share held by these motorcycle companies in the United States, offering insights into their relative popularity among consumers.","{'duration': 3.4509899616241455, 'cpu_used': 0.3, 'mem_used': 0}","This graph shows the number of reported motorcycle thefts in the United States in 2019, by make. In 2019, 8,122 American Honda Motor Co., Inc. motorcycles were stolen nationwide.",Please clarify the meaning conveyed by this graph.
+data/chart2text/chart2text11.png,"The image presents a bar graph that provides an overview of health indicators for people living in Sweden. The horizontal bars are colored in blue and white, representing the different health indicators. Each indicator is accompanied by a percentage value, which likely represents its contribution to the overall health status of the population.
+
+Starting from the left, the first bar depicts ""Days without symptoms"" with a value of 3.0, indicating that approximately 3 out of 10 people in Sweden experienced fewer than three days of symptoms within a given period.
+
+Next to it is ""Number of hospitalizations per year"", which shows a value of 2.6, suggesting that around two and a half hospitalizations occur annually for every 100 individuals.
+
+The third bar represents ""Hospital care due to injuries and illnesses (including surgery)"", with a value of 7.8, indicating that approximately seven and eight out of ten people in Sweden received some form of hospital care due to injuries or illnesses within a given year.
+
+Following this is the ""Number of visits to healthcare providers"", which shows a value of 3.1, suggesting that approximately three out of ten individuals visited healthcare providers at least once during the reference period.
+
+The last bar on the right depicts ""Number of visits to general practitioners (GPs)"", with a value of 11.9, indicating that around eleven and nine percent of people in Sweden visited general practitioners within a year.
+
+The graph is set against a white background with blue text providing additional information at the bottom. The precise location of objects or their relative positions cannot be determined from this description. The graph provides a snapshot of health trends in Sweden, offering insights into the frequency and distribution of various health indicators among the population.","{'duration': 3.9262712001800537, 'cpu_used': 0.3, 'mem_used': 0}","This statistic shows the compound annual growth rate (CAGR) of health and wellness food and beverage categories in Europe between 2010 and 2015. Organic food and beverage has experienced the highest growth rate of 3.7 percent in the five years under consideration, followed by food intolerance products at 2.9 percent.",Could you shed some light on the insights conveyed by this graph?
+data/chart2text/chart2text12.png,"The image presents a bar chart that compares the number of people who use different social media platforms. The chart is divided into two columns, one for mobile and the other for desktop.
+
+On the left column, we see the following numbers:
+- 61,313.8: Mobile
+- 51,352.7: Facebook
+- 45,456.5: Twitter
+- 24,620.34: LinkedIn
+
+These numbers represent the number of users on each platform.
+
+The right column displays the following numbers:
+- 1,570.26: Mobile
+- 586,646: Desktop
+- 553.32: YouTube
+- 1,024.94: Instagram
+- 556,44: Snapchat
+- 555.82: WhatsApp
+- 46,444: Telegram
+
+The chart shows a significant overlap between mobile and desktop users on different platforms.
+
+Please note that this description is based on the information available in the image and does not include any assumptions or interpretations beyond what can be directly observed.","{'duration': 2.62571382522583, 'cpu_used': 0.0, 'mem_used': 0}","Hawaii has taken part in 16 U.S presidential elections, and has sided with the winning candidate in ten of these, giving a success rate of 63 percent. Hawaii has voted for the Democratic nominee in 14 elections, and the only times where the Republican nominees won were in 1972 and 1984, where Richard Nixon and Ronald Reagan respectively won re-election in landslide victories. In the 2020 election, Joe Biden carried the state with a near thirty percent margin in the popular vote.",Could you shed some light on the insights conveyed by this graph?
+data/chart2text/chart2text13.png,"The image presents a bar graph that tracks the number of people employed in the health care industry from 2001 to 2016. The bars are arranged vertically, with each bar representing a year and the height of the bar indicating the number of people employed during that year.
+
+Starting from the bottom left corner, the first bar shows 750 individuals in employment. As we move towards the right, we see an increase in the number of employed individuals, reaching a peak at around 2015 with approximately 1620 individuals employed. This trend continues until 2016 when the number of employed individuals decreases to 1401.
+
+The graph is set against a white background and is accompanied by text at the bottom left corner that reads ""Addditional information"". The precise locations of the bars are relative to each other, creating a continuous line across the years. The bars are evenly spaced, providing a clear and organized visual representation of the data being tracked.
+
+Overall, the image provides a detailed overview of the growth and decline in employment within the health care industry over a 15-year period from 2001 to 2016.","{'duration': 2.7986836433410645, 'cpu_used': 0.0, 'mem_used': 0}","In 2019, the highest number of alleged victims of sexual violence in Colombia were girls between ten and 14 years old, with over 9.3 thousand of such cases reported that year. More than seven thousand of the supposed attacks that year involved victims aged between zero and nine years.Furthermore, nearly 12 thousand deaths in Colombia were classified as murders in 2018.",Can you break down the data visualization and explain its message?
+data/chart2text/chart2text14.png,"The image presents a detailed snapshot of a bar graph, which is situated in the center of the page. The graph is divided into two distinct sections: one for confidence levels and another for areas mixed with uncertainty.
+
+On the left side of the graph, there are three columns representing different confidence levels. Each column is filled with a variety of colors ranging from yellow to brown, indicating varying degrees of certainty. 
+
+In contrast, the right side of the graph displays three distinct columns each. These columns represent different areas that are mixed with uncertainty. Each column is also filled with multiple colors, signifying a range of possible outcomes.
+
+The background of the image is white, providing a stark contrast to the colorful data visualization. At the bottom of the image, there's a note stating ""Don't know/Responses not shown"". This text seems to indicate that certain responses were not included in the analysis.
+
+Overall, the image serves as a visual representation of a complex analysis performed on mixed data, where varying degrees of confidence and uncertainty are intertwined.","{'duration': 2.518834352493286, 'cpu_used': 0.4, 'mem_used': 0}","Public confidence in Trump on most key issues remains mixed, though a narrow majority (54%) now say they are either very or somewhat confident in him to negotiate favorable trade agreements with other countries. This is the first measure in Pew Research Center surveys on which significantly more say they are at least somewhat confident in Trump than say they are not too or not at all confident (54% vs. 44%).",Can you break down the data visualization and explain its message?
+data/chart2text/chart2text2.png,"The image presents a line graph that tracks the number of users on a platform over time. The data is represented as blue lines, with each line indicating a different category: ""Zoomable"", ""select the range in the chart you want to zoom in on"", and ""Zooom"". 
+
+The x-axis of the graph represents time, ranging from 2006 to 2014. During this period, there are two peaks in the number of users - one for each line. The peak for ""Zoomable"" is located at the beginning of the graph, indicating a high initial adoption rate or usage. On the other hand, the peak for ""Zooom"" is towards the end of the graph, suggesting that this category experienced a late surge in popularity.
+
+The y-axis of the graph represents the number of users, with values ranging from 100 to 400. This suggests that there was a significant variation in user numbers over time within each category.
+
+Overall, the graph provides insights into the trend of user adoption and usage across these categories on this platform over several years.","{'duration': 2.7096052169799805, 'cpu_used': 0.4, 'mem_used': 0}","The statistic shows gross domestic product (GDP) in Norway from 1984 to 2018, with projections up until 2021. Gross domestic product (GDP) denotes the aggregate value of all services and goods produced within a country in any given year. GDP is an important indicator of a country's economic power. In 2018, Norway's gross domestic product amounted to around 395.87 billion international dollars.",Can you elaborate on the message conveyed by this graph?
+data/chart2text/chart2text3.png,"The image presents a bar chart that provides information about the popularity of different subjects in a syllabus. The chart is divided into two columns: on the left, there are various subjects and their corresponding number of students enrolled; on the right, there's a list of all the students who have not yet completed the course.
+
+The subjects listed include ""Nutrition"", ""Medical Science"", ""Mathematics"", ""Engineering & Architecture"", ""Computers & Mathematics"", and ""Biotechnology"". The chart reveals that out of these six subjects, ""Medical Science"" is the most popular with 21 students enrolled. In contrast, ""Biotechnology"" has the least number of students enrolled, just one.
+
+Additionally, the chart shows that there are 23 students who have not yet completed the course. However, without more context or information, it's difficult to draw any specific conclusions from these data. The chart does not provide enough information to determine why some subjects are more popular than others, nor what factors might influence student enrollment and completion rates in the future.","{'duration': 2.6119868755340576, 'cpu_used': 0.4, 'mem_used': 0}","This statistic shows the R&D funding granted by institutions to finance the fight against selected diseases in 2018. In that year, there were some 1.45 billion U.S. dollars provided for R&D specifically for the fight against HIV/AIDS.",Could you shed some light on the insights conveyed by this graph?
+data/chart2text/chart2text4.png,"The image presents a bar graph that illustrates the popularity of different news sources over a specific period, from December 29 to January 4. The x-axis of the graph represents the different news sources, and the y-axis represents the percentage of readers who followed each source.
+
+The graph is set against a white background with black text for clarity. The topmost bar in the graph corresponds to ""Financial crisis"", indicating that it was the most popular source during this period. Just below it, there's a bar representing ""Obama transition"", suggesting it was another highly sought-after news source.
+
+Further down, there are bars representing ""Financial crisis"", ""Midwest conflict"", ""Obama transition"", and ""Blagojevich"". These bars all have a similar height, indicating that they were also popular sources of news during the same period.
+
+Towards the bottom of the graph, we see a bar representing ""Afghanistan"", followed by ""Bush's last days"" and then ""1"". These bars are significantly shorter than the others, suggesting they were less popular sources of news during this time.
+
+The entire graph is framed in black, providing a stark contrast against the white background. This makes it easy to read and interpret the data presented in the image. The title ""Measuring News Interest Week of December 29 - January 4"" provides context for the period covered by the graph. 
+
+Overall, the image provides a snapshot of how different news sources were followed during this particular week, offering insights into public interest and media consumption trends.","{'duration': 3.5204203128814697, 'cpu_used': 0.3, 'mem_used': 0}","Among the public, three-in-ten (32%) followed Obama’s appointments and plans very closely, making it among the most closely followed stories of the week. One-in-four (24%) say that the transition was the story they followed most closely. Reports about President Bush’s last days in the White House were followed very closely by 12% of the public; this was the top story for 1% of Americans. These stories accounted for 1% of total news.
+News about U.S. economic conditions shared the public’s attention with the Obama transition and the conflict in the Middle East last week. Four-in-ten (42%) Americans followed the economy very closely; 26% said this was the new story they followed more closely than all other reporting. The media devoted 13% of the newshole to reports about the economy.
+In other findings from Pew’s Weekly News Interest Index, one-in-four Americans say they followed news about Illinois Gov. Rod Blagojevich appointing Roland Burris to replace Obama in the Senate, despite an ongoing corruption investigation alleging Blagojevich attempted to sell the seat for personal gain. The Blagojevich saga was the most closely followed story of the week for 10% of the public. Two-in-ten (22%) paid very close attention to news about the ongoing conflict in Afghanistan; 5% cited this as their top story.",Please describe the key points or trends indicated by this graph.
+data/chart2text/chart2text5.png,"The image presents a bar graph, titled ""Addition information"", set against a light blue background. The bars represent the annual number of registered motor vehicles in Sweden for each year from 2010 to 2017. The x-axis labels these years with their respective values.
+
+Starting from the left, the first bar corresponds to the year 2010 and has a value of 2.8. Adjacent to it, the second bar represents the year 2011 and its value is 3.49. The third bar in line is for the year 2014 and displays the value of 3.5. Following this, the fourth bar stands for the year 2015 with a value of 3.01. The fifth bar corresponds to the year 2016 and its value is 4.04. Finally, the last bar on the right represents the year 2017 and has a value of 4.44.
+
+The bars are uniformly colored in blue and have white borders, creating a consistent visual effect across all years. Each bar's height corresponds to its respective value, providing a clear comparison between the different years. The image provides a straightforward visual representation of changes in registered motor vehicle numbers over time in Sweden.","{'duration': 2.9999847412109375, 'cpu_used': 0.0, 'mem_used': 0}","This statistic shows the gross value added (GVA) of the architecture industry in the United Kingdom (UK) from 2010 to 2016, with provisional results for 2017. In 2016, the gross value added of the architecture industry amounted to roughly 3.8 billion British pounds, almost doubled compared to 2010 value.",Can you break down the data visualization and explain its message?
+data/chart2text/chart2text6.png,"The image presents a line graph that tracks the average daily rate of hotels in Saltillo, Argentina from 2009 to 2014. The graph is plotted on a white background with grid lines and is set against a blue header. 
+
+Three distinct peaks and valleys are visible on the graph, indicating fluctuations in the average daily rate over time. A peak at the top left corner of the graph corresponds to the year 2009, while another peak at the bottom right corner signifies the year 2014. The year 2008 is represented by a valley located at the bottom left corner of the graph.
+
+The x-axis of the graph represents the years from 2009 to 2014, and the y-axis denotes the average daily rate in pesos. 
+
+In addition to the main graph, there are two smaller graphs on the right side of the image. These graphs represent the distribution of hotels by category (budget, mid-range, or luxury) and by hotel type (hotel with swimming pool, hotel without swimming pool).
+
+The text ""Saltillo - Argentina"" is visible at the top left corner of the image, indicating the location being represented on the graph.
+
+Overall, the image provides a visual representation of the changes in the average daily rate of hotels in Saltillo, Argentina over a five-year period.","{'duration': 3.128903865814209, 'cpu_used': 0.6, 'mem_used': 0}","The production of flue-cured tobacco in India was approximately 240 million kilograms in fiscal year 2018. Although this was a steady increase in recent years, production figures were not as high as in fiscal year 2014. Tobacco was an important cash or profit crop for the country, mainly produced in the southern states of Andhra Pradesh and Karnataka.",Explain what this graph is communicating.
+data/chart2text/chart2text7.png,"The image presents a bar graph that visualizes the number of individuals who have received funding from various sources. The graph is set against a white background, with each bar representing a different source of funding.
+
+Starting from the left, the first bar represents ""Heat of the sun"", which has received 19.3% of the total funding. Next to it, we see bars for ""Lessons learned from disease"" and ""Lessons learned from job loss"", which collectively represent 7.2% of the total funding.
+
+The third bar in order is for ""Lessons learned from job loss"", but this time, it's representing 5.6%. Moving further right, there are bars for ""Lessons learned from job loss"" and ""Lessons learned from job loss"", which together represent 7.2% of the total funding.
+
+The graph also includes a legend that provides additional information about each bar. According to this legend, ""Hard to say"" represents 3.8% of the total funding, while ""No money left"" represents 4.9%. Lastly, there's a bar for ""Heat of the sun"", but this time, it represents 19.3%.
+
+The graph also includes a label that reads ""Additional information"", suggesting that there might be more details not included in the visual representation.
+
+Overall, the graph provides a clear and concise overview of where funding is being allocated, giving us an insight into the priorities and values of those receiving this funding.","{'duration': 3.3392539024353027, 'cpu_used': 0.0, 'mem_used': 0}","One-fifth of the respondents in Poland are in a poor financial situation. Lack of money - such an obstacle in planning holidays is reported by 21 percent of respondents. On the other hand, eight percent are held back from travelling by uncertainty related to the maintenance of work and income.  For further information about the coronavirus (COVID-19) pandemic, please visit our dedicated Facts and Figures page.",Can you break down the data visualization and explain its message?
+data/chart2text/chart2text8.png,"The image presents a bar graph that provides a visual representation of the final hits for each year from 2005 to 2014, as well as the total number of hits in each year. The bars are organized vertically and colored in blue, with their heights representing the final hits for each year. The x-axis is labeled with the years from 2005 to 2014, while the y-axis shows the total number of hits for each year. 
+
+Starting from the left, the first bar represents the year 2005 with a height of 116, followed by bars for the years 2006 (194), 2007 (196), and 2008 (171). The final three bars represent the years 2009 (257), 2010 (337), and 2011 (327). The last two bars on the right side of the graph represent the years 2012 (411) and 2014 (483), and the bar for the year 2015 shows a total height of 463. 
+
+The graph provides a clear and concise visual representation of the final hits trend over the course of nine years, highlighting the growth and decline of popularity for the song during these years.","{'duration': 2.9354286193847656, 'cpu_used': 0.3, 'mem_used': 0}","This statistic shows the number of Apple stores around the world from 2005 to 2015. In 2015, there were 463 Apple stores worldwide.",Please clarify the meaning conveyed by this graph.
+data/chart2text/chart2text9.png,"The image presents a bar graph that compares the size of the French, Italian, and United Kingdom economies as a percentage of the European Union's total GDP in 2021. The bars are colored blue, symbolizing the EU, while the background is white. 
+
+Starting from the left, the first bar represents France with a height of 15.3%, indicating that France accounts for approximately 15.3% of the EU's total GDP.
+
+Next to it, the second bar signifies Germany and includes Italy in its representation. These countries combined constitute 11.8% of the EU's total GDP, as indicated by the second bar.
+
+The third bar from the left stands for Portugal and is located next to Italy. Its height of 7.4% indicates that these countries collectively account for 7.4% of the EU's total GDP.
+
+Following this, the fourth bar represents United Kingdom and is situated next to Portugal. It has a height of 6.9%, signifying that this country contributes approximately 6.9% to the EU's total GDP.
+
+Finally, the fifth bar from the left signifies the United States and is placed next to the United Kingdom. Its height of 4.8% indicates that the United States accounts for approximately 4.8% of the EU's total GDP.
+
+At the bottom of the graph, there's a legend that provides additional information about the countries represented by each bar. The legend also includes a date ""31/03/2021"", which appears to be the date when this comparison was made.
+
+Overall, the graph serves as a visual representation of the economic contributions of these countries within the European Union in 2021.","{'duration': 3.7754335403442383, 'cpu_used': 0.0, 'mem_used': 0}","The statistic shows the main export partners for Spain in 2017. In 2017, the most important export partner for Spain was France, accounting for 15.1 percent of all exports.",I'd like to understand the message this graph is trying to highlight.
