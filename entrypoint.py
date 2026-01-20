@@ -4,6 +4,8 @@ import argparse
 parser = argparse.ArgumentParser(description="Benchmark entrypoint")
 parser.add_argument("--config_path", type=str, required=True, help="Path to YAML config file")
 parser.add_argument("--download", action="store_true", help="Download datasets before running")
+parser.add_argument("--is_eval", default=False, help="Whether it's evaluation mode")
+
 
 args = parser.parse_args()
 
